@@ -148,6 +148,7 @@ img{
   .popular__container {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   /* Increase sale image height slightly */
