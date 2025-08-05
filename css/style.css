@@ -135,10 +135,56 @@ img{
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container, .popular__container {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+} */
+@media (max-width: 768px) {
+  /* Stack product cards vertically */
+  .container,
+  .popular__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Increase sale image height slightly */
+  .sale-image img {
+    width: 100%;
+    height: 300px; /* slightly higher than default */
+    object-fit: cover;
+  }
+
+  /* Shrink and stack navbar */
+  .navbar {
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .navbar__s1 h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .navbar__s2 {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .navbar__s2 a {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+  .navbar__s3 {
+    margin-top: 6px;
+  }
+
+  .navbar__s3 i {
+    font-size: 18px;
   }
 }
